@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Afirme! - Transforme seus dias</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom, #f0f4f8, #ffffff);
+      color: #333;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      color: #2c3e50;
+    }
+
+    p.subtitle {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      color: #34495e;
+    }
+
+    form {
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      text-align: left;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+
+    input[type="text"], input[type="email"], textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccd0d5;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 0.5rem;
+    }
+
+    .checkbox-group {
+      margin-bottom: 1rem;
+    }
+
+    button {
+      background-color: #4a90e2;
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 12px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #357ABD;
+    }
+
+    .disclaimer {
+      font-size: 0.85rem;
+      color: #7f8c8d;
+      margin-top: 1rem;
+      text-align: center;
+    }
+
+    .urgent {
+      color: #e74c3c;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Transforme seus dias com Afirme!</h1>
+    <p class="subtitle">Receba afirmações positivas diárias, escolha suas categorias favoritas e descubra como pequenos momentos podem melhorar sua vida.</p>
+    
+    <form action="https://formspree.io/f/xeolqray" method="POST">
+      <label for="name">Nome</label>
+      <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+      <label>Funcionalidades que mais te interessam:</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="features" value="Receber afirmações diárias"> Receber afirmações diárias</label>
+        <label><input type="checkbox" name="features" value="Escolher categorias de afirmações"> Escolher categorias de afirmações</label>
+        <label><input type="checkbox" name="features" value="Criar minhas próprias afirmações"> Criar minhas próprias afirmações</label>
+        <label><input type="checkbox" name="features" value="Outra"> Outra: <input type="text" name="feature_other" placeholder="Digite aqui"></label>
+      </div>
+
+      <label for="motivation">O que te faria amar um app como este?</label>
+      <textarea id="motivation" name="motivation" rows="3" placeholder="Digite sua resposta (opcional)"></textarea>
+
+      <button type="submit">Quero acesso antecipado + 3 meses grátis</button>
+    </form>
+
+    <p class="disclaimer"><span class="urgent">Não perca!</span> As vagas para acesso antecipado são limitadas. Preencha o formulário e comece sua transformação hoje.</p>
+  </div>
+</body>
+</html>
